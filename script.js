@@ -36,10 +36,29 @@ function playRound(playerSelection, computerSelection) {
 }
 
 function game() {
-  let rounds = 0;
   let comp = 0;
   let player = 0;
-  for (rounds = 0; rounds < 5; rounds++) {}
+  for (rounds = 0; rounds < 5; rounds++) {
+    let playerChoice = prompt("Type in Rock Paper or Scissors");
+    let result = playRound(playerChoice, getComputerChoice());
+    console.log(result);
+    if (result === 1) {
+      comp++;
+    } else if (result === 2) {
+      player++;
+    }
+    console.log(`Player Score:${player} Computer Score:${comp}`);
+  }
+  if (player > comp) {
+    console.log(
+      `You beat the Computer -Final Score- Player Score:${player} Computer Score ${comp}`
+    );
+  } else if (comp > player) {
+    console.log(
+      `The Computer beat You -Final Score- Player Score:${player} Computer Score ${comp}`
+    );
+  } else
+    console.log(
+      `The game ends in a Tie -Final Score- Player Score:${player} Computer Score ${comp} `
+    );
 }
-
-

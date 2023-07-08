@@ -60,3 +60,18 @@ function game() {
   //     `The game ends in a Tie -Final Score- Player Score:${player} Computer Score ${comp} `
   //   );
 }
+
+// Button Selectors
+const rock = document.querySelector("#Rock");
+const paper = document.querySelector("#Paper");
+const scissors = document.querySelector("#Scissors");
+
+// Score Diplay Selectors
+const rounds = document.querySelector("#rounds");
+const pScore = document.querySelector("#pScore");
+const cScore = document.querySelector("#cScore");
+const winner = document.querySelector("#winner");
+
+//Img Holder Selectors
+const compImg = document.querySelector("#comp");
+const playerImg = document.querySelector("#player");

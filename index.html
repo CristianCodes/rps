@@ -3,9 +3,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RPS</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div id="scores">
+        <p>ROUND: <span>0</span></p>
+        <p>PLAYER SCORE: <span>0</span></p>
+        <p>COMP SCORE: <span>0</span></p>
+    </div>
+
+    <div id="outcome">
+        <p class="hidden">The Winner is <span id="winner"></span></p>
+    </div>
+
+    <div class="container">
+        <button class="choices" id="Rock">Rock</button>
+        <button class="choices" id="Paper">Paper</button>
+        <button class="choices" id="Scissors">Scissors</button>
+    </div>
+
+    <div class="visual">
+        <div class="visual-ui">
+            <p>PLAYER</p>
+            <p> vs </p>
+            <p>COMPUTER</p>
+        </div>
+
+        <div class="img-holder">
+            <div id="player"></div>
+            <div id="comp"></div>
+        </div>
+    </div>
+
 </body>
 </html>
